@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.smallc.crawlercollection.repository.page.IPageRepository">
+
+    <resultMap id="pageNewsMap" type="PageNews">
+        <id property="ID" column="ID" javaType="int"></id>
+        <result property="url" column="url" javaType="String"></result>
+        <result property="title" column="title" javaType="String"></result>
+        <result property="category" column="category" javaType="String"></result>
+        <result property="secondCategory" column="secondCategory" javaType="String"></result>
+        <result property="urlFrom" column="urlFrom" javaType="String"></result>
+        <result property="keywords" column="keywords" javaType="String"></result>
+        <result property="author" column="author" javaType="String"></result>
+        <result property="timeStr" column="timeStr" javaType="String"></result>
+        <result property="content" column="content" javaType="String"></result>
+        <result property="source" column="source" javaType="String"></result>
+        <result property="crawlerTime" column="crawlerTime" javaType="Date"></result>
+        <result property="cts" column="cts" javaType="long"></result>
+        <collection property="IMG" ofType="IMG">
+            <id column="i_id" property="ID"/>
+            <result property="purl" column="purl"/>
+            <result property="src" column="src"/>
+            <result property="idx" column="idx"/>
+            <result property="alt" column="alt"/>
+            <result property="pname" column="pname"/>
+        </collection>
+    </resultMap>
+
+    <select id="getByCts" resultMap="PageNews">
+        SELECT * FROM tb_page_news p LEFT JOIN tb_img ON p.url = i.purl 
+        WHERE p.cts &gt; #{startCts} AND p.cts &lt; #{endCts}
+    </select>
+
+    <select id="get" parameterType="int" resultType="PageNews">
+        SELECT * FROM tb_page_news WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="PageNews">
+        INSERT  into tb_page_news
+        (url,title,category,urlFrom,keywords,author,timeStr,content,source,crawlerTime,cts)
+        values
+        (#{url},#{title},#{category},#{urlFrom},#{keywords},#{author},#{timeStr}
+        ,#{content},#{source},#{crawlerTime},#{cts})
+    </insert>
+
+
+
+</mapper>

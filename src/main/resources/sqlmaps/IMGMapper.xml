@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.smallc.crawlercollection.repository.page.IIMGRepository">
+
+    <insert id="insert" parameterType="IMG">
+        INSERT  into tb_img
+        (purl,src,idx,alt,pname)
+        values
+        (#{purl},#{src},#{idx},#{alt},#{pname})
+    </insert>
+    
+    <insert id="batchInsert" parameterType="map">
+        INSERT INTO tb_img
+        (purl,src,idx,alt,pname)
+        values
+        <foreach collection="list" index="idx" item="item" separator=",">
+            (#{item.purl},#{item.src},#{item.idx},#{item.alt},#{item.pname})
+        </foreach>
+
+    </insert>
+
+
+
+</mapper>

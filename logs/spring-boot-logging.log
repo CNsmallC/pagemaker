@@ -1,0 +1,11 @@
+2019-03-01 17:44:28.064  INFO 24380 --- [main] c.smallc.pagemaker.PagemakerApplication  : Starting PagemakerApplication on chaihongfang with PID 24380 (E:\smallC\workspace\pagemaker\target\classes started by admin in E:\smallC\workspace\pagemaker)
+2019-03-01 17:44:28.066  INFO 24380 --- [main] c.smallc.pagemaker.PagemakerApplication  : No active profile set, falling back to default profiles: default
+2019-03-01 17:44:28.786  WARN 24380 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[cn.smallc.pagemaker]' package. Please check your configuration.
+2019-03-01 17:44:29.926  INFO 24380 --- [main] c.smallc.pagemaker.PagemakerApplication  : Started PagemakerApplication in 2.711 seconds (JVM running for 3.454)
+2019-03-01 17:47:01.292  INFO 9496 --- [main] c.smallc.pagemaker.PagemakerApplication  : Starting PagemakerApplication on chaihongfang with PID 9496 (E:\smallC\workspace\pagemaker\target\classes started by admin in E:\smallC\workspace\pagemaker)
+2019-03-01 17:47:01.295  INFO 9496 --- [main] c.smallc.pagemaker.PagemakerApplication  : No active profile set, falling back to default profiles: default
+2019-03-01 17:47:01.818  WARN 9496 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[cn.smallc.pagemaker]' package. Please check your configuration.
+2019-03-01 17:47:02.371  INFO 9496 --- [main] c.smallc.pagemaker.PagemakerApplication  : Started PagemakerApplication in 1.42 seconds (JVM running for 2.218)
+2019-03-01 17:49:59.939  INFO 13012 --- [main] c.smallc.pagemaker.PagemakerApplication  : Starting PagemakerApplication on chaihongfang with PID 13012 (E:\smallC\workspace\pagemaker\target\classes started by admin in E:\smallC\workspace\pagemaker)
+2019-03-01 17:49:59.944  INFO 13012 --- [main] c.smallc.pagemaker.PagemakerApplication  : No active profile set, falling back to default profiles: default
+2019-03-01 17:50:00.286  INFO 13012 --- [main] c.smallc.pagemaker.PagemakerApplication  : Started PagemakerApplication in 0.76 seconds (JVM running for 1.748)
