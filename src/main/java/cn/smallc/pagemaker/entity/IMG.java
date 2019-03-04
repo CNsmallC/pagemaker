@@ -4,6 +4,7 @@ package cn.smallc.pagemaker.entity;
 import cn.smallc.pagemaker.common.ientity.WebAggregateRoot;
 
 public class IMG extends WebAggregateRoot {
+    private int ID;
     //所属页面
     private String purl;
     //图片地址
@@ -14,6 +15,14 @@ public class IMG extends WebAggregateRoot {
     private String alt;
     //图片名
     private String pname;
+
+    public int getID() {
+        return ID;
+    }
+
+    public void setID(int ID) {
+        this.ID = ID;
+    }
 
     public String getPname() {
         return pname;

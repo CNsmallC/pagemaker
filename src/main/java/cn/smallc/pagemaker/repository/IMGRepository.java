@@ -1,7 +1,7 @@
 package cn.smallc.pagemaker.repository;
 
-import cn.smallc.crawlercollection.common.db.Repository;
-import cn.smallc.crawlercollection.entity.IMG;
+import cn.smallc.pagemaker.common.db.Repository;
+import cn.smallc.pagemaker.entity.IMG;
 import org.springframework.stereotype.Service;
 
 @Service

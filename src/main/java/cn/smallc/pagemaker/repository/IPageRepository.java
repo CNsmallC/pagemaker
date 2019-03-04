@@ -1,7 +1,7 @@
 package cn.smallc.pagemaker.repository;
 
-import cn.smallc.crawlercollection.common.db.IRepository;
-import cn.smallc.crawlercollection.entity.PageNews;
+import cn.smallc.pagemaker.common.db.IRepository;
+import cn.smallc.pagemaker.entity.PageNews;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

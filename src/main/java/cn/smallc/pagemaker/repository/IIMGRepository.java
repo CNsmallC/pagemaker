@@ -1,7 +1,7 @@
 package cn.smallc.pagemaker.repository;
 
-import cn.smallc.crawlercollection.common.db.IRepository;
-import cn.smallc.crawlercollection.entity.IMG;
+import cn.smallc.pagemaker.common.db.IRepository;
+import cn.smallc.pagemaker.entity.IMG;
 import org.apache.ibatis.annotations.Mapper;
 
 @Mapper

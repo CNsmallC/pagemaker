@@ -1,8 +1,7 @@
 package cn.smallc.pagemaker.repository;
 
-import cn.smallc.crawlercollection.common.db.Repository;
-import cn.smallc.crawlercollection.entity.PageNews;
-import org.apache.ibatis.annotations.Param;
+import cn.smallc.pagemaker.common.db.Repository;
+import cn.smallc.pagemaker.entity.PageNews;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -18,7 +17,7 @@ public class PageRepository extends Repository<PageNews,IPageRepository> {
 //    }
 
     public List<PageNews> getByCts(Long startCts,Long endCts){
-        return getByCts(startCts,endCts);
+        return repository.getByCts(startCts,endCts);
     }
 
 }
