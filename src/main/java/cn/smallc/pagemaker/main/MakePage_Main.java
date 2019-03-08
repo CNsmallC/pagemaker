@@ -2,7 +2,6 @@ package cn.smallc.pagemaker.main;
 
 import cn.smallc.pagemaker.entity.PageNews;
 import cn.smallc.pagemaker.support.SharedRepositoryFactory;
-import org.springframework.data.domain.Page;
 
 import java.io.*;
 import java.text.ParseException;
@@ -25,9 +24,9 @@ public class MakePage_Main {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         try {
             //开始时间
-            Date startTime = sdf.parse("2019-03-04 00:00:00");
+            Date startTime = sdf.parse("2019-03-07 00:00:00");
             //结束时间
-            Date endTime = sdf.parse("2019-03-05 00:00:00");
+            Date endTime = sdf.parse("2019-03-07 23:59:59");
 
             List<PageNews> pageNewsList = SharedRepositoryFactory.getPageRepository()
                     .getByCts(startTime.getTime(), endTime.getTime());

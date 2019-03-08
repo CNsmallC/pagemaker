@@ -1,6 +1,5 @@
 package cn.smallc.pagemaker.support;
 
-import cn.smallc.crawlercollection.repository.visited.VisitedRepository;
 import cn.smallc.pagemaker.repository.IMGRepository;
 import cn.smallc.pagemaker.repository.PageRepository;
 import org.springframework.beans.factory.annotation.Autowired;
